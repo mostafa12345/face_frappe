@@ -9,17 +9,12 @@ page_js = {
 }
 fixtures = [
     {
-        "doctype": "DocType",  # Correct case-sensitive name
+        "doctype": "DocType",  # Include only DocTypes from the "Face" module
         "filters": [
-            ["module", "=", "Face"]  # Ensure this matches the module name of your app
+            ["module", "=", "Face"]
         ]
     },
-    {
-        "doctype": "Property Setter"
-    },
-    {
-        "doctype": "Custom Field"
-    }
+
 ]
 after_install = "face.utils.install_dependencies"
 
